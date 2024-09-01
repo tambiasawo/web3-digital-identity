@@ -1,0 +1,41 @@
+{
+  "_format": "hh-sol-cache-2",
+  "files": {
+    "/Users/m1air/Documents/career/projects/frontend/Next Apps/digital-identity-app-web3/contracts/identiFi.sol": {
+      "lastModificationDate": 1725065137318,
+      "contentHash": "dc4cf25035ab467fc249712fde8c1f11",
+      "sourceName": "contracts/identiFi.sol",
+      "solcConfig": {
+        "version": "0.8.24",
+        "settings": {
+          "evmVersion": "paris",
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IdentiFi"
+      ]
+    }
+  }
+}
