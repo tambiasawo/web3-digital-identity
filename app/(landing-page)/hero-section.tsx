@@ -119,19 +119,6 @@ const HeroSection = () => {
         <span className="text-sky-500 font-bold">IdentiFi</span>
       </p>
 
-      <div className="flex gap-4 pt-6 items-center justify-center">
-        <Link href="/">
-          <Button className="py-1 ">
-            <div className="flex items-center justify-center">
-              <div className="text-lg">Create Identity</div>
-              <div>
-                <PiArrowRight className="ml-2 " />
-              </div>
-            </div>
-          </Button>
-        </Link>
-      </div>
-
       <div className="pt-10 xl:pt-20 items-center justify-center">
         <Image
           src="/assets/ReadingSideDoodle.svg"
@@ -147,6 +134,7 @@ const HeroSection = () => {
             <motion.div
               key={tab.name}
               className={`
+               
              xl:flex 
              justify-center 
              space-x-4
@@ -158,7 +146,7 @@ const HeroSection = () => {
              h-36
              ${
                activeTab === tab
-                 ? "border rounded-xl pt-2 bg-white "
+                 ? "border rounded-xl pt-2 bg-white  hover:!cursor-none"
                  : "shadow-md rounded-xl pt-2  bg-[#f6f5f4] m"
              }
            `}

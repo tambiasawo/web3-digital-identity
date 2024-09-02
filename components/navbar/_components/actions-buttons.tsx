@@ -13,7 +13,6 @@ import { getUserByAddress } from "@/utils/queries";
 
 const ActionButtons = () => {
   const { ready, authenticated, login, logout } = usePrivy();
-  const disableLogin = !ready || (ready && authenticated);
   const { wallets } = useWallets();
 
   const [isDropdownVisible, setDropdownVisible] = useState(false);
@@ -37,7 +36,7 @@ const ActionButtons = () => {
   }, [ready, authenticated]);
 
   console.log(UserInfo == "User does not exist.");
-  console.log({authenticated});
+  console.log({ authenticated });
 
   return (
     <div className="pr-2">
@@ -130,7 +129,7 @@ const ActionButtons = () => {
         </div>
       )}
       {!isDropdownVisible && (
-        <div onClick={toggleDropdown} className="flex lg:hidden">
+        <div onClick={toggleDropdown} className="flex lg:hidden cursor-pointer">
           <AlignJustify className="h-6 w-6 items-center justify-center mr-2" />
         </div>
       )}
